@@ -1,5 +1,0 @@
-2018-05-10 09:23:27,631 - INFO - Reading in data from text_input/sample_input.csv
-2018-05-10 09:23:27,642 - INFO - Creating textacy Doc objects using the text found in the 'text' column
-2018-05-10 09:24:24,003 - INFO - Extracting the following descriptive stats for entity sentiments: ['count', 'mean', 'min', '25%', '50%', '75%', 'max'] 
-2018-05-10 09:24:24,003 - INFO - Extracting the sentiments for the following entities: ['characters', 'plot', 'hero', 'villain'] 
-2018-05-10 09:24:32,601 - INFO - Outputting sentiments to output/2018-05-10 09-24.csv

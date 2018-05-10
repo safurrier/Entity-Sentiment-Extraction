@@ -1,2 +1,0 @@
-2018-05-09 15:12:31,874 - INFO - Reading in data from text_input/sample_input.csv
-2018-05-09 15:12:31,885 - INFO - Creating textacy Doc objects using the text found in the 'text' column
