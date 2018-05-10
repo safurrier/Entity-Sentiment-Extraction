@@ -3,7 +3,7 @@ Entity Sentiment Extraction
 
 Extract sentiments sentences in which a specific entity appears. For each entity and each text document, the sentiment
 of sentences in which the entity appears is extracted and aggregated to descriptive statistics (count, mean, quantiles, min, max).
-The entities to search for as well as the descriptive statistics desired can be specified in the config file. 
+The entities to search for as well as the descriptive statistics desired can be specified in the config file.
 
 To extract entity sentiments:
 
@@ -32,7 +32,7 @@ Project Organization
     ├── Makefile                         <- Makefile with commands like `make sentiments`
     ├── README.md                        <- The top-level README for developers using this project.
     │              
-    ├── notebooks                        <- Jupyter notebooks. See example.ipynb for a sample of how the 
+    ├── notebooks                        <- Jupyter notebooks. See example.ipynb for a sample of how the
     │                                       entity sentiment extraction works
     │                                       
     │              
@@ -44,16 +44,6 @@ Project Organization
     │                                       generated with `pip freeze > requirements.txt`
     │               
     ├── config.yaml                      <- Config file with environment variables required for extracting entity sentiments
-    │   │                   
-    │   ├── input_filepath               <- the filepath to the the text csv in the 'inputs' folder
-    │   │              
-    │   ├── text_col                     <- The column name in the input csv which holds text
-    │   │              
-    │   ├── entities                     <- A list of the entities for which to search and extract sentiment from 
-    │   └── sentiment_descriptive_stats  <- A list of the descriptive stats to pull for an entities sentiment for
-    │                                       a given text. May choose from the following:
-    │                                       'count', 'mean', 'min', '25%', '50%', '75%', 'max'
-    │                                       25% and 75% refer to quanitiles
     │
     ├── src                              <- Source code for use in this project.
         ├── __init__.py                  <- Makes src a Python module
