@@ -43,7 +43,16 @@ Project Organization
     ├── requirements.txt                 <- The requirements file for reproducing the analysis environment, e.g.
     │                                       generated with `pip freeze > requirements.txt`
     │               
-    ├── config.yaml                      <- Config file with environment variables required for extracting entity sentiments
+    ├── config.yaml                      <- Config file with environment variables required for extracting entity sentiments                  
+    │   ├── input_filepath               <- the filepath to the text csv in the 'inputs' folder
+    │   │              
+    │   ├── text_col                     <- The column name in the input csv which holds text
+    │   │              
+    │   ├── entities                     <- A list of the entities for which to search and extract sentiment from
+    │   └── sentiment_descriptive_stats  <- A list of the descriptive stats to pull for an entities sentiment for
+    │                                       a given text. May choose from the following:
+    │                                       'count', 'mean', 'min', '25%', '50%', '75%', 'max'
+    │                                       25% and 75% refer to quantiles
     │
     ├── src                              <- Source code for use in this project.
         ├── __init__.py                  <- Makes src a Python module
