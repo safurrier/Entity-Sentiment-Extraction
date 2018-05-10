@@ -1,0 +1,7 @@
+input_filepath: 'text_input/sample_input.csv'
+
+text_col: 'text'
+
+entities: ['characters', 'plot', 'hero', 'villain']
+
+sentiment_descriptive_stats: ['count', 'mean', 'min', '25%', '50%', '75%', 'max']

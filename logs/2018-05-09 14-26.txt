@@ -1,0 +1,15 @@
+2018-05-09 14:26:37,380 - INFO - Reading in data from text_input/sample_input.csv
+2018-05-09 14:26:37,668 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 14:27:20,022 - INFO - Extracting the following descriptive stats for entity sentiments: ['count', 'mean', 'min', '25%', '50%', '75%', 'max'] 
+2018-05-09 14:27:20,023 - INFO - Extracting the sentiments for the following entities: ['characters', 'plot', 'hero', 'villain'] 
+2018-05-09 14:27:27,898 - INFO - Outputting sentiments to output/2018-05-09 14-27.csv
+2018-05-09 15:09:15,289 - INFO - Reading in data from text_input/sample_input.csv
+2018-05-09 15:09:15,727 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:09:28,935 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:10:27,175 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:12:26,613 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:12:32,854 - INFO - Reading in data from text_input/sample_input.csv
+2018-05-09 15:12:33,104 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:12:43,813 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:15:49,276 - INFO - Creating textacy Doc objects using the text found in the 'text' column
+2018-05-09 15:16:45,700 - INFO - Creating textacy Doc objects using the text found in the 'text' column
