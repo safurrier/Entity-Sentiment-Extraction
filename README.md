@@ -64,6 +64,6 @@ Project Organization
         │
         ├── sentiment_descriptive_stats  <- A list of the descriptive stats to pull for an entities sentiment for 
 	                                        a given text. May choose from the following:
-											'count', 'mean', 'min', '25%', '50%', '75%', 'max'
-											25% and 75% refer to quantiles	 
+                                            'count', 'mean', 'min', '25%', '50%', '75%', 'max'
+                                            25% and 75% refer to quantiles	 
 	 
