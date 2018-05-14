@@ -50,8 +50,6 @@ Project Organization
     │   │
     │   ├── textblob_entity_sentiment.py <- Code for searching text for entities and extracting sentiment
     │   │
-    │   ├── helper-functions             <- Some Pandas helper functions
-    │   │
     │   └── convenience_functions        <- Convenience functions for pandas and textacy, including a Dask
     │                                       multiprocessing partitioned apply to dataframes
     │
