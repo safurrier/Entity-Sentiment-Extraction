@@ -51,6 +51,7 @@ def main():
     from src.convenience_functions.textacy_convenience_functions import list_of_entity_statements
     from src.convenience_functions.textacy_convenience_functions import dask_df_apply
     from src.textblob_entity_sentiment import textblob_entity_sentiment
+    from src.vader_entity_sentiment import vader_entity_sentiment
 
 
     # ## Create log file
@@ -105,13 +106,25 @@ def main():
 
     logging.info("""Extracting the sentiments for the following entities: {} """.format(cfg['entities']))
 
-    sentiments = [textblob_entity_sentiment(df=df,
-                                            textacy_col='textacy_doc',
-                                            entity=entity,
+    if cfg['sentiment_method'] == 'textblob':
+        sentiments = [textblob_entity_sentiment(df=df, 
+                                                textacy_col='textacy_doc', 
+                                                entity=entity, 
+                                                inplace=False,
+                                               keep_stats=['count', 'mean', 'min', 'max']) 
+                      for entity
+                      in entities_for_sentiment]
+    elif cfg['sentiment_method'] == 'vader':
+        sentiments = [vader_entity_sentiment(df=df, 
+                                            textacy_col='textacy_doc', 
+                                            entity=entity, 
                                             inplace=False,
-                                            keep_stats=cfg['sentiment_descriptive_stats'])
+                                            vader_sent_types = ['neg', 'neu', 'pos', 'compound'],
+                                            keep_stats=cfg['sentiment_descriptive_stats']) 
                   for entity
                   in cfg['entities']]
+    else:
+        print("'textblob' or 'vader' must be set in the config 'sentiment_method' field")
     # Concat to single df
     sentiments = pd.concat(sentiments, axis=1)
 

@@ -16,3 +16,4 @@ textblob==0.15.1
 textacy==0.6.0
 spacy==2.0.11
 dask==0.17.2
+vaderSentiment==3.2.1

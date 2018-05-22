@@ -61,7 +61,13 @@ Project Organization
         ├── entities                     <- A list of the entities for which to search and extract sentiment from
         │
         ├── sentiment_descriptive_stats  <- A list of the descriptive stats to pull for an entities sentiment for 
-	                                        a given text. May choose from the following:
-                                            'count', 'mean', 'min', '25%', '50%', '75%', 'max'
-                                            25% and 75% refer to quantiles	 
+	    │                                     a given text. May choose from the following:
+        │                                    'count', 'mean', 'min', '25%', '50%', '75%', 'max'
+        │                                    25% and 75% refer to quantiles	 
+        │                                       
+        ├── sentiment_method             <- Sentiment analysis method ()'vader' or 'textblob'). Vader is reccomended in most
+        │                                   cases. With longer text or simplicity is desired, textblob may be preferrable. 
+        │
+        ├── vader_sentiment_keep_types   <- If using Vader sentiment analysis method, a list of types of sentiment to extract.
+                                            neg: negative, pos: positive, neu: neutral, compound is comination of all three types
 	 

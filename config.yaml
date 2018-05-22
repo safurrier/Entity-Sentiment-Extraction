@@ -5,3 +5,9 @@ text_col: 'text'
 entities: ['characters', 'plot', 'hero', 'villain']
 
 sentiment_descriptive_stats: ['count', 'mean', 'min', '25%', '50%', '75%', 'max']
+
+sentiment_method: 'vader' #or 'textblob'
+
+vader_sentiment_keep_types: ['neg', 'neu', 'pos', 'compound']
+
+
